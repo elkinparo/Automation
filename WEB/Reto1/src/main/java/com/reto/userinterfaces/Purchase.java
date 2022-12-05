@@ -18,14 +18,14 @@ public class Purchase
     public static final Target ORDERS = Target.the("ORDERS")
             .located(By.xpath("//*[text()='Pedidos']"));
     public static final Target CUPON = Target.the("CUPON")
-            .located(By.xpath("//*[@class='button danger coupon-button']"));
+            .located(By.id("welcome-coupon"));
     public static final Target CUPONCODE = Target.the("CUPONCODE")
             .located(By.xpath("//*[@class='coupon-code']"));
     public static final Target CUPONCLOSE = Target.the("CUPONCLOSE")
             .located(By.xpath("//*[contains(text(),'Copia este código y úsalo para disfrutar de un descuento por única vez')]//preceding::span[2]"));
 
     public static final Target CUPONINPUT = Target.the("CUPONINPUT")
-            .located(By.xpath("//*[@class='input ng-pristine ng-valid ng-touched']"));
+            .located(By.xpath("//input[@id='coupon']"));
 
     public static final Target BEGINING = Target.the("BEGINING")
             .located(By.xpath("//*[contains(text(),'Inicio')]"));

@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="as a quality analyst" skipped="0" tests="1" time="12.57" timestamp="2022-12-05 05:09:22"><testcase name="log in to the page"><error message="Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]" type="java.lang.IllegalArgumentException">Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]</error><system-err>Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]&#13;
-com.reto.tasks.SendPurchase.format(SendPurchase.java:57)&#13;
-com.reto.stepdefinitions.PurchaseStepDefinitions.checkTheOffersPageAndMakeAPurchaseCoupon(PurchaseStepDefinitions.java:12)&#13;
-✽.: check the offers page and make a purchase "without a" coupon(file:///C:/Users/epalacios/Desktop/Repos/Automation/WEB/Reto1/src/test/resources/features/purchase.feature:11)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="as a quality analyst" skipped="0" tests="1" time="22.03" timestamp="2022-12-05 06:56:54"><testcase name="log in to the page"/></testsuite>

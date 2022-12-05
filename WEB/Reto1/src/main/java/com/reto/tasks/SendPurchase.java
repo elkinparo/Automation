@@ -51,6 +51,7 @@ public class SendPurchase implements Task {
                     WaitUntil.the(Purchase.ORDERS, WebElementStateMatchers.isVisible())
             );
         }
+
     }
 
     public static SendPurchase format(String option) {

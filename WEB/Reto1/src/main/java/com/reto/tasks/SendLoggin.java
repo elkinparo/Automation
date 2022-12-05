@@ -20,6 +20,7 @@ public class SendLoggin implements Task
                 Enter.theValue(data.getLOGIN()).into(Loggin.USER),
                 Enter.theValue(data.getPASWORD()).into(Loggin.PASWORD),
                 Click.on(Loggin.GET_INTO));
+
     }
 
     public static SendLoggin format(PrimaryModel data)
