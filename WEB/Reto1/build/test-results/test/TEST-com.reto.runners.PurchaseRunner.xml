@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reto.runners.PurchaseRunner" tests="2" skipped="0" failures="2" errors="0" timestamp="2022-12-05T22:09:22" hostname="SISTE821" time="13.499">
+  <properties/>
+  <testcase name="log in to the page #1" classname="com.reto.runners.PurchaseRunner" time="9.143">
+    <failure message="java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]
+	at net.thucydides.core.steps.StepFactory.argumentTypesFrom(StepFactory.java:307)
+	at net.thucydides.core.steps.StepFactory.immutableStepLibrary(StepFactory.java:295)
+	at net.thucydides.core.steps.StepFactory.createProxyStepLibrary(StepFactory.java:251)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:219)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:153)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at com.reto.tasks.SendPurchase.format(SendPurchase.java:57)
+	at com.reto.stepdefinitions.PurchaseStepDefinitions.checkTheOffersPageAndMakeAPurchaseCoupon(PurchaseStepDefinitions.java:12)
+	at ✽.: check the offers page and make a purchase &quot;without a&quot; coupon(file:///C:/Users/epalacios/Desktop/Repos/Automation/WEB/Reto1/src/test/resources/features/purchase.feature:11)
+</failure>
+  </testcase>
+  <testcase name="log in to the page #2" classname="com.reto.runners.PurchaseRunner" time="4.353">
+    <failure message="java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Could not find a matching constructor for class class com.reto.tasks.SendPurchase with parameters [without a]
+	at com.reto.tasks.SendPurchase.format(SendPurchase.java:57)
+	at com.reto.stepdefinitions.PurchaseStepDefinitions.checkTheOffersPageAndMakeAPurchaseCoupon(PurchaseStepDefinitions.java:12)
+	at ✽.: check the offers page and make a purchase &quot;without a&quot; coupon(file:///C:/Users/epalacios/Desktop/Repos/Automation/WEB/Reto1/src/test/resources/features/purchase.feature:11)
+	at ✽.: actor opens browser(file:///C:/Users/epalacios/Desktop/Repos/Automation/WEB/Reto1/src/test/resources/features/purchase.feature:15)
+</failure>
+  </testcase>
+  <system-out><![CDATA[?[92m|-- Given : actor opens browser?[0m
+?[92m|---- Elkin opens the browser at https://automation-wappi.vercel.app/login?[0m
+?[92m|-- When : I send the username and password?[0m
+?[92m|---- Elkin send loggin?[0m
+?[92m|------ Elkin enters 'kfcudgt16354673' into USER?[0m
+?[92m|------ Elkin enters '05299540371' into PASWORD?[0m
+?[92m|------ Elkin clicks on GET_INTO?[0m
+?[92m|-- Then : check the offers page and make a purchase "without a" coupon?[0m
+?[92m|---- Given : actor opens browser?[0m
+?[92m|------ Elkin opens the browser at https://automation-wappi.vercel.app/login?[0m
+?[92m|------ When : I send the username and password?[0m
+?[92m|------ Then : check the offers page and make a purchase "with" coupon?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 60834
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 05, 2022 5:09:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+dic 05, 2022 5:09:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 107, so returning the closest version found: a no-op implementation
+dic 05, 2022 5:09:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 107.
+dic 05, 2022 5:09:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 63092
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 05, 2022 5:09:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+dic 05, 2022 5:09:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 107, so returning the closest version found: a no-op implementation
+dic 05, 2022 5:09:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 107.
+dic 05, 2022 5:09:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
