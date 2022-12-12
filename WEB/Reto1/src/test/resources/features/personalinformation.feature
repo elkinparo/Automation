@@ -4,7 +4,7 @@ Feature: as a quality analyst
   I want to test the information registration flow
   to confirm its correct operation
 
-  @login
+  @personal
   Scenario: log in to the page
     Given : actor opens browser
     When : I send the username and password

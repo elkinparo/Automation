@@ -1,7 +1,7 @@
 # elkinparo@gmail.com
 
 Feature: as a quality analyst
-  I want to test the buy tickets flow
+  I want to test the account registration flow
   to confirm its correct operation
 
   @login
