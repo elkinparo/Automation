@@ -1,7 +1,10 @@
 package com.reto.utils;
 
 import com.github.javafaker.Faker;
+import com.reto.models.Information;
 import com.reto.models.PrimaryModel;
+
+import java.text.SimpleDateFormat;
 
 public class Generate
 {
@@ -11,5 +14,14 @@ public class Generate
     {
         return new PrimaryModel(FAKER.bothify("???????########"),
                 FAKER.bothify("###########"));
+    }
+    public static Information dataInformation()
+    {
+        String strDateFormat = "d/MM/yyyy";
+        SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);
+
+        return new Information(FAKER.name().name(),
+                FAKER.name().lastName(),
+                objSDF.format(FAKER.date().birthday()));
     }
 }
