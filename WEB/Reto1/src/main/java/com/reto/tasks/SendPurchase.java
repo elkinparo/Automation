@@ -23,18 +23,7 @@ public class SendPurchase implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        if (option.equals("without a"))
-        {
-            actor.attemptsTo(
-                    Click.on(Purchase.ASK),
-                    Click.on(Purchase.CONFIRMORDER),
-                    WaitUntil.the(Purchase.CONFIRMATIONMESSAGE, WebElementStateMatchers.isVisible()),
-                    Click.on(Purchase.CLOSE),
-                    Click.on(Purchase.MYORDERS),
-                    WaitUntil.the(Purchase.ORDERS, WebElementStateMatchers.isVisible())
-            );
-        }
-        else
+        if (option.equals("with"))
         {
             actor.attemptsTo(
                     Click.on(Purchase.CUPON));
@@ -43,7 +32,18 @@ public class SendPurchase implements Task {
                     Click.on(Purchase.CUPONCLOSE),
                     Click.on(Purchase.BEGINING),
                     Click.on(Purchase.ASK),
-                            Enter.theValue(code).into(Purchase.CUPONINPUT),
+                    Enter.theValue(code).into(Purchase.CUPONINPUT),
+                    Click.on(Purchase.CONFIRMORDER),
+                    WaitUntil.the(Purchase.CONFIRMATIONMESSAGE, WebElementStateMatchers.isVisible()),
+                    Click.on(Purchase.CLOSE),
+                    Click.on(Purchase.MYORDERS),
+                    WaitUntil.the(Purchase.ORDERS, WebElementStateMatchers.isVisible()));
+
+        }
+        else
+        {
+            actor.attemptsTo(
+                    Click.on(Purchase.ASK),
                     Click.on(Purchase.CONFIRMORDER),
                     WaitUntil.the(Purchase.CONFIRMATIONMESSAGE, WebElementStateMatchers.isVisible()),
                     Click.on(Purchase.CLOSE),
@@ -51,7 +51,6 @@ public class SendPurchase implements Task {
                     WaitUntil.the(Purchase.ORDERS, WebElementStateMatchers.isVisible())
             );
         }
-
     }
 
     public static SendPurchase format(String option) {

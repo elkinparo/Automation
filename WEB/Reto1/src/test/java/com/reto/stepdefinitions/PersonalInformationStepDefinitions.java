@@ -1,7 +1,6 @@
 package com.reto.stepdefinitions;
 
 import com.reto.tasks.SendPersonalInformation;
-import com.reto.tasks.SendPurchaseWithCupon;
 import com.reto.utils.Generate;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.actors.OnStage;

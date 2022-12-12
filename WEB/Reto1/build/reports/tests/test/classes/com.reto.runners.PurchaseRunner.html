@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - PersonalInformationRunner</title>
+<title>Test results - PurchaseRunner</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>PersonalInformationRunner</h1>
+<h1>PurchaseRunner</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/com.reto.runners.html">com.reto.runners</a> &gt; PersonalInformationRunner</div>
+<a href="../packages/com.reto.runners.html">com.reto.runners</a> &gt; PurchaseRunner</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.962s</div>
+<div class="counter">22.238s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,13 @@
 </tr>
 </thead>
 <tr>
-<td class="success">log in to the page</td>
-<td class="success">12.962s</td>
+<td class="success">log in to the page #1</td>
+<td class="success">12.698s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">log in to the page #2</td>
+<td class="success">9.540s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -94,37 +99,61 @@
 ?[92m|---- Elkin opens the browser at https://automation-wappi.vercel.app/login?[0m
 ?[92m|-- When : I send the username and password?[0m
 ?[92m|---- Elkin send loggin?[0m
-?[92m|------ Elkin enters 'hbdjmhm03027351' into USER?[0m
-?[92m|------ Elkin enters '13954382329' into PASWORD?[0m
+?[92m|------ Elkin enters 'sygjgob99039315' into USER?[0m
+?[92m|------ Elkin enters '12642571762' into PASWORD?[0m
 ?[92m|------ Elkin clicks on GET_INTO?[0m
-?[92m|-- Then : see the image with the message Tu información se guardó correctamente?[0m
-?[92m|---- Elkin send personal information?[0m
-?[92m|------ Elkin clicks on PERSONALINFORMATION?[0m
-?[92m|------ Elkin enters 'C:\Users\EPALAC~1\AppData\Local\Temp\prueba4159333142684398442.tmp' into IMAGE?[0m
-?[92m|------ Elkin enters 'Lanelle Quitzon' into NAME?[0m
-?[92m|------ Elkin enters 'Blick' into LASTNAME?[0m
-?[92m|------ Elkin enters '19/08/1988' into DATE?[0m
-?[92m|------ Elkin clicks on COUNTRY?[0m
-?[92m|------ Elkin clicks on OPTIONCOUNTRY?[0m
-?[92m|------ Elkin clicks on M?[0m
-?[92m|------ Elkin clicks on SAVE?[0m
+?[92m|-- Then : check the offers page and make a purchase &quot;without a&quot; coupon?[0m
+?[92m|---- Elkin send purchase?[0m
+?[92m|------ Elkin clicks on ASK?[0m
+?[92m|------ Elkin clicks on CONFIRMORDER?[0m
+?[92m|------ Elkin clicks on CLOSE?[0m
+?[92m|------ Elkin clicks on MYORDERS?[0m
+?[92m|-- Given : actor opens browser?[0m
+?[92m|---- Elkin opens the browser at https://automation-wappi.vercel.app/login?[0m
+?[92m|-- When : I send the username and password?[0m
+?[92m|---- Elkin send loggin?[0m
+?[92m|------ Elkin enters 'sfdbocv23405425' into USER?[0m
+?[92m|------ Elkin enters '87705406660' into PASWORD?[0m
+?[92m|------ Elkin clicks on GET_INTO?[0m
+?[92m|-- Then : check the offers page and make a purchase &quot;with&quot; coupon?[0m
+?[92m|---- Elkin send purchase?[0m
+?[92m|------ Elkin clicks on CUPON?[0m
+?[92m|------ Elkin clicks on CUPONCLOSE?[0m
+?[92m|------ Elkin clicks on BEGINING?[0m
+?[92m|------ Elkin clicks on ASK?[0m
+?[92m|------ Elkin enters 'UEsYadWzhsB2Nzh' into CUPONINPUT?[0m
+?[92m|------ Elkin clicks on CONFIRMORDER?[0m
+?[92m|------ Elkin clicks on CLOSE?[0m
+?[92m|------ Elkin clicks on MYORDERS?[0m
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 58046
+<pre>Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 60883
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic 12, 2022 5:54:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dic 12, 2022 6:29:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-dic 12, 2022 5:54:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+dic 12, 2022 6:29:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 108, so returning the closest version found: a no-op implementation
-dic 12, 2022 5:54:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+dic 12, 2022 6:29:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMACIÓN: Unable to find CDP implementation matching 108.
-dic 12, 2022 5:54:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+dic 12, 2022 6:29:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 49346
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 12, 2022 6:29:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+dic 12, 2022 6:29:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 108, so returning the closest version found: a no-op implementation
+dic 12, 2022 6:29:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 108.
+dic 12, 2022 6:29:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
 ?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
@@ -153,7 +182,7 @@ ADVERTENCIA: Unable to find version of CDP to use for . You may need to include 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 12-dic-2022 17:55:02</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 12-dic-2022 18:29:33</p>
 </div>
 </div>
 </body>
